@@ -1,0 +1,7 @@
+#Function returns the average of the middle elements should the length of the provided list be even. Otherwise, returns the middle element
+def middle_element(my_list):
+  if len(my_list) % 2 == 0:
+    sum = my_list[int(len(my_list)/2)] + my_list[int(len(my_list)/2) - 1]
+    return sum / 2
+  else:
+    return my_list[int(len(my_list)/2)]
